@@ -137,6 +137,21 @@ void ex7(){
 }
 void ex8(){
 	
+	int x1, x2, y1, y2, p1, p2;
+    float dist;
+    
+    printf("Insira o valor do par ordenado (x1, y1): ");
+	scanf("%d", &x1);
+	scanf("%d", &y1);
+	printf("Insira o valor do par ordenado (x2, y2): ");
+	scanf("%d", &x2);
+	scanf("%d", &y2);
+
+	p1 = (x2 - x1) * (x2 - x1);
+	p2 = (y2 - y1) * (y2 - y1);
+	dist = sqrt(p1 + p2);
+	printf("A distância é: %f", dist);
+		
 }
 
 		
@@ -175,6 +190,10 @@ int main(){
 	
 	case 7:
 	ex7();
+	break;
+	
+	case 8:
+	ex8();
 	break;
 	
 	
