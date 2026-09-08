@@ -37,7 +37,7 @@ void ex2(){
 		n--;
 }
 		
-	printf("o valor em notaçao cientifica e: %f ", valor);
+	printf("o valor em notaÃ§ao cientifica e: %f ", valor);
 	
 }
 
@@ -64,7 +64,7 @@ void ex3(){
 	bit_2 = res % 2;
 	res = res / 2;
 	
-	printf("O valor de %d em binario é: %d %d %d %d %d %d \n", valor, bit_2, bit_4, bit_8, bit_16, bit_32, bit_64);
+	printf("O valor de %d em binario Ã©: %d %d %d %d %d %d \n", valor, bit_2, bit_4, bit_8, bit_16, bit_32, bit_64);
 	
 	
 }
@@ -107,9 +107,9 @@ void ex5(){
 	media = soma / 2;
 	prod = num1 * num2 * num3 * num4;
 	
-	printf("A soma dos numeros é: %d \n", soma);
-	printf("A media dos numeros é: %d \n", media);
-	printf("O produtorio dos numeros é: %d \n", prod);
+	printf("A soma dos numeros Ã©: %d \n", soma);
+	printf("A media dos numeros Ã©: %d \n", media);
+	printf("O produtorio dos numeros Ã©: %d \n", prod);
 }
 void ex6(){
 	int ano, dia, mes;
@@ -132,7 +132,7 @@ void ex7(){
 	r3 = raio * raio * raio;
 	volume = (4/3.0) * pi * r3;
 	
-	printf("O valor do volume da esfera é: %.2f", volume);
+	printf("O valor do volume da esfera Ã©: %.2f", volume);
 	
 }
 void ex8(){
@@ -150,7 +150,7 @@ void ex8(){
 	p1 = (x2 - x1) * (x2 - x1);
 	p2 = (y2 - y1) * (y2 - y1);
 	dist = sqrt(p1 + p2);
-	printf("A dist�ncia �: %f", dist);
+	printf("A distância é: %f", dist);
 		
 }
 
@@ -159,7 +159,7 @@ int main(){
 	
 	int ex;
 	
-	printf("escolha o exercicio 1,2,3,4,5,6,7,8,9,10: \n");
+	printf("escolha o exercicio 1,2,3,4,5,6,7,8: \n");
 	scanf("%d", &ex);
 	
 	switch(ex){
