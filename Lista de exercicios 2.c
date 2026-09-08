@@ -58,6 +58,17 @@ void ex4(){
 	printf("A temperatura em Graus Celsius para Fahrenheit é de: %.2f", fah);
 	
 }
+void ex5(){
+	float graus, radianos, pi;
+	printf("Me de um angulo em graus: \n");
+	scanf("%f", &graus);
+	
+	pi = 3.141592;
+	radianos = graus * pi / 180;
+	
+	printf("O seu valor do angulo em graus é: %.2f e convertido em radiano é: %.2f", graus, radianos);
+	
+}
 int main(){
 	int ex;
 	
@@ -81,5 +92,10 @@ int main(){
 	case 4:
 	ex4();
 	break;
+	
+	case 5:
+	ex5();
+	break;
+	
 	}
 	}
