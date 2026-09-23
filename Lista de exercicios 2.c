@@ -33,19 +33,19 @@ void ex2(){
 	
 	m = km / 36;
 	
-	printf("Sua velocidade � de %.2f e em m/s e de: %.2f", km, m);
+	printf("Sua velocidade é de %.2f e em m/s e de: %.2f", km, m);
 }
 void ex3(){
 	float valor, cot, valor_dolar;
 	printf("--- exercicio 3 ---\n");
 	printf("Me de um valor: \n");
 	scanf("%f", &valor);
-	printf("Me de a cota�ao atual: \n");
+	printf("Me de a cotaçao atual: \n");
 	scanf("%f", &cot);
 	
 	valor_dolar = valor * cot;
 	
-	printf("Seu valor convertido em dolar � de: %.2f \n", valor_dolar);
+	printf("Seu valor convertido em dolar é de: %.2f \n", valor_dolar);
 }
 void ex4(){
 	float cel, fah;
@@ -55,7 +55,7 @@ void ex4(){
 	
 	fah = cel * (9.0/5.0) + 32.0;
 	
-	printf("A temperatura em Graus Celsius para Fahrenheit � de: %.2f", fah);
+	printf("A temperatura em Graus Celsius para Fahrenheit é de: %.2f", fah);
 	
 }
 void ex5(){
@@ -66,9 +66,80 @@ void ex5(){
 	pi = 3.141592;
 	radianos = graus * pi / 180;
 	
-	printf("O seu valor do angulo em graus �: %.2f e convertido em radiano �: %.2f", graus, radianos);
+	printf("O seu valor do angulo em graus é: %.2f e convertido em radiano é: %.2f", graus, radianos);
 	
 }
+void ex6(){
+	int num, antecessor, sucessor;
+
+	printf("Digite um número para descobrir seu antecessor e sucessor: ");
+	scanf("%d", &num);
+
+	antecessor = num - 1;
+	sucessor = num + 1;
+
+	printf("seu numero: %d \n", num);
+	printf("Antecessor: %d\n", antecessor);
+	printf("Sucessor: %d\n", sucessor);
+}
+void ex7(){
+	
+	float primeiro, segundo, terceiro, valor;
+	
+	printf("Valor a ser dividido R$780.000\n");
+	
+	valor = 780000;
+	
+	primeiro = valor * 0.46;
+	segundo = valor * 0.32;
+	terceiro = valor - (primeiro + segundo);
+	
+	printf("O primeiro irá receber: R$%.2f\n", primeiro);
+	printf("O segundo irá receber: R$%.2f\n", segundo);
+	printf("O terceiro irá receber: R$%.2f\n", terceiro);
+}
+void ex8(){
+	int segundos, horas, minutos;
+	
+	printf("Digite os segundos: \n");
+	scanf("%d", &segundos);
+	
+	horas = segundos  / 3600;
+	minutos = (segundos-(horas*3600))/60;
+	segundos = segundos -((horas*3600)+(minutos*60));
+	
+	printf("Horas: %d\n", horas);
+	printf("Minutos: %d\n", minutos);
+	printf("Segundos: %d\n", segundos);
+	
+	printf("Valor formatado: %d:%d:%d\n", horas, minutos, segundos);
+}
+void ex9(){
+	float horas1, vel, litros, distancia;
+	
+	printf("Quanto tempo foi gasto na viagem? ");
+	scanf("%f", &horas1);
+	
+	printf("Digite a velocidade média(km/h): ");
+	scanf("%f", &vel);
+	
+	distancia = horas1 * vel;
+	litros = distancia / 12;
+	
+	printf("A distância percorrida foi: %.3f km/h\n", distancia);
+	printf("Litros que serão gastos na viagem: %.3f\n", litros);
+}
+void ex10(){
+int a, b, c, maior_temp, maior;
+printf("Insira os valores a serem comparados: ");
+scanf("%d %d %d", &a, &b, &c);
+	
+maior_temp = ((a+b)+abs(a-b))/2;
+maior = ((maior_temp+c)+abs(maior_temp-c))/2;
+	
+printf("O maior entre |%d|%d|%d| = %d", a,b,c,maior);
+}
+
 int main(){
 	int ex;
 	
@@ -95,6 +166,26 @@ int main(){
 	
 	case 5:
 	ex5();
+	break;
+
+	case 6:
+	ex6();
+	break;
+
+	case 7:
+	ex7();
+	break;
+
+	case 8:
+	ex8();
+	break;
+		
+	case 9:
+	ex8();
+	break;
+
+	case 10:
+	ex8();
 	break;
 	
 	}
