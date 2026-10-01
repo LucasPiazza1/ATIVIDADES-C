@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 
-//prova MA
 void ex0(){
 	
 	int n1, n2, n3, n4;
