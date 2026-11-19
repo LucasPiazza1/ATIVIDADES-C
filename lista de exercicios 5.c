@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
 	
 	printf("Resultado em double:  %f", numeroD);
 	
-	printf("\nO numero em notaÁ„o cientifica: %lf  ", resultado);
+	printf("\nO numero em nota√ß√£o cientifica: %lf  ", resultado);
 	
 
 
@@ -64,7 +64,7 @@ int main(int argc, char *argv[]) {
 	
 	printf("\n""Insira o valor a ser convertido:   ");
 	scanf ("%d", &n);
-	//% 2 pega o resto da divis„o por 2; /2 faz a divis„o inteira por 2.
+	//% 2 pega o resto da divis√£o por 2; /2 faz a divis√£o inteira por 2.
 
 
 
@@ -149,7 +149,7 @@ int main(int argc, char *argv[]) {
 		
 		diferenca = sqrt(pow(x2[i]-x1[i],2)+pow(y2[i]-y1[i],2));
 		
-		printf("A diferenÁa È igual : %d", diferenca);
+		printf("A diferen√ßa √© igual : %d", diferenca);
 		
 		//exercicio 7
 		
@@ -161,7 +161,7 @@ int main(int argc, char *argv[]) {
 			scanf("%d", &numero[i]);
 		}
 		
-		//verificar quais s„o consecutivos
+		//verificar quais s√£o consecutivos
 		for(i=0; i<99;i++){
 			if (vet[i+1]== vet[i+1]){
 				 printf("%d e %d sao consecutivos\n", vet[i], vet[i + 1]);
